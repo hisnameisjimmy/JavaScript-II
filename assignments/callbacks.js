@@ -52,13 +52,16 @@ function contains(item, list, cb) {
 }
 
 /* STRETCH PROBLEM */
-
-function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-  array.filter((item, index) => {
-    return array.indexOf(item) >= index;
-  });
-}
 
+let deduped = [];
+
+// deduped = function removeDuplicates(_items, cb) {
+//   array.filter((item, index) => {
+//     return array.indexOf(item) >= index;
+//   });
+// }
+
+console.log(deduped);
