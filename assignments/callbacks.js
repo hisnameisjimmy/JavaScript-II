@@ -26,19 +26,19 @@ const items = ['Pencil', 'Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) {
-  return arr.length;
+  return cb(arr.length);
 }
 
 function last(arr, cb) {
-  return arr.pop();
+  return cb(arr.pop());
 }
 
 function sumNums(x, y, cb) {
-  return x + y;
+  return cb(x + y);
 }
 
 function multiplyNums(x, y, cb) {
-  return x * y;
+  return cb(x * y);
 }
 
 function contains(item, list, cb) {
@@ -46,7 +46,7 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
   for (i = 0; i < list.length; i++) {
     if (list[i] === item) {
-      return true;
+      return cb(true);
     }
   }
 }
